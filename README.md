@@ -145,4 +145,12 @@ You should be able to authenticate with using your LDAP active directory creds.
 
 This LDAP Authentication is very basic and your LDAP server may require further configruation in your Rails app to properly authenticate with it. Checkout the Net-LDAP documentation for more information. There are plenty more customizations you can do from here. Since Devise comes with alot of standard features, there are plenty of features you dont need when using LDAP as your source for authentication. I'd suggest your read up on the Devise gem and learn how about how to disable features that you wont be using.
 
-#### Hope this helps :) ####
+### Author ###
+Jaison Brooks
+
+### Credits ###
+* [Devise](https://github.com/plataformatec/devise "Devise")
+* [net-ldap](https://github.com/ruby-ldap/ruby-net-ldap "Net-LDAP")
+
+### License ###
+See ```LICENSE.txt```
