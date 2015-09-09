@@ -1,8 +1,7 @@
 # LDAP-Rails
 This is a demo project and instructions on how to authenticate with an LDAP (Active Directory) server using the Devise gem at a very basic level. 
 
-### Getting Started ###
-To run the demo, run through the following.
+### Running the Demo ###
 
 #### Step 1 ####
 ```sh
@@ -13,9 +12,8 @@ git clone https://github.com/JaisonBrooks/LDAP-Rails.git
 Add your LDAP SERVER and PORT in the ```config/secrets.yml```
 
 ```yaml
-defaults: &defaults
-  ldap_server: YOUR_SERVER
-  ldap_port: YOUR_PORT
+ldap_server: YOUR_SERVER
+ldap_port: YOUR_PORT
 ```
 
 #### Step 3 ####
@@ -25,10 +23,16 @@ rake db:migrate
 ```
 
 #### Step 4 ####
-Run your server and enjoy
+Run your server
 ```sh
 rails s
 ```
+
+#### Finally ####
+The home root is the ```/posts``` page and therefore when accessing the server you will be redirected to sign in ```/users/sign_in``` page if you have not yet been authenticated.
+
+Supply your credientials, Hit submit and upon success you will be granted access to the Posts page.
+
 ___
 ## Add LDAP to your Application ##
 These steps will show you how you can add basic LDAP authentication to your application.
